@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça o perfil, competências e projetos de Hubert, Desenvolvedor Back-end da 00Brother.">
+  <meta name="theme-color" content="#172838">
+  <title>Hubert | Desenvolvedor Back-end | 00Brother</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="principal.html">00<span>Brother</span></a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="principal.html">Início</a>
+        <a href="6.html">Sites entregues</a>
+        <a href="7.html">Portfólio</a>
+        <a href="8.html">Planos</a>
+        <a href="9.html" class="nav-cta">Orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero profile-hero">
+    <div class="hero-inner profile-layout">
+      <div id="profile-photo"></div>
+      <div>
+        <span class="eyebrow">Perfil Profissional</span>
+        <h1>Olá, eu sou <span id="profile-name">Hubert</span>.</h1>
+        <p class="profile-role" id="profile-role">Desenvolvedor Back-end</p>
+        <p id="profile-description">Desenvolvedor back-end focado na construção de servidores eficientes, desenvolvimento de APIs robustas, modelagem de bancos de dados e integridade de dados.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="9.html">Conversar sobre um projeto ↗</a>
+          <a class="btn btn-outline" href="principal.html#equipe">Voltar à equipe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="skills-section">
+      <div class="skills-section-head">
+        <span class="eyebrow" style="color:#927321">HABILIDADES & COMPETÊNCIAS</span>
+        <h2>Competências profissionais</h2>
+        <p>Principais áreas técnicas e conhecimentos aplicados por Hubert em desenvolvimento back-end.</p>
+      </div>
+      <div class="skills-grid" id="profile-skills"></div>
+    </section>
+
+    <section style="margin-top: 50px;">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#927321">PROJETOS & TRABALHOS</span>
+        <h2>Projetos de Hubert</h2>
+        <p>Conheça os trabalhos e arquiteturas desenvolvidas com a participação de Hubert.</p>
+      </div>
+      <div class="project-grid" id="portfolio-projects"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>00Brother</strong>
+        <div class="small">Ideias que ganham forma na web.</div>
+      </div>
+      <div class="small">
+        <a href="mailto:00brotherempresa@gmail.com">00brotherempresa@gmail.com</a>
+        ·
+        <a href="https://wa.me/5543996350864">WhatsApp (43) 99635-0864</a>
+      </div>
+      <div class="small">
+        © 2026 00Brother. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <div class="page-transition" aria-hidden="true"></div>
+  <script src="equipe.js"></script>
+  <script>renderProfile("hubert");</script>
+  <script src="projetos.js"></script>
+  <script>
+    const mine = projetos.filter(p => p.pessoa === "hubert");
+    const el = document.getElementById("portfolio-projects");
+    el.innerHTML = mine.length
+      ? mine.map(p => projectCard(p)).join("")
+      : `<div class="empty-state">
+           <h3>Portfólio em atualização</h3>
+           <p>Estamos preparando a seleção de projetos deste desenvolvedor. Volte em breve para conhecer os novos trabalhos.</p>
+           <a class="project-link" href="9.html">Falar com a equipe →</a>
+         </div>`;
+  </script>
+  <script src="transitions.js"></script>
+</body>
+</html>

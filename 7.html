@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólios individuais e competências dos profissionais da 00Brother.">
+  <meta name="theme-color" content="#172838">
+  <title>Portfólios da Equipe | 00Brother</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="principal.html">00<span>Brother</span></a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="principal.html">Início</a>
+        <a href="6.html">Sites entregues</a>
+        <a href="7.html" aria-current="page">Portfólio</a>
+        <a href="8.html">Planos</a>
+        <a href="9.html" class="nav-cta">Orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Conheça nosso trabalho</span>
+      <h1>Portfólios da equipe.</h1>
+      <p>Explore os projetos e competências de cada profissional. Cada perfil individual reúne habilidades, áreas de atuação e experiências desenvolvidas.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#equipe">Conhecer profissionais ↗</a>
+        <a class="btn btn-outline" href="9.html">Conversar sobre um projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container" id="equipe">
+    <div class="section-head">
+      <span class="eyebrow" style="color:#927321">NOSSA EQUIPE</span>
+      <h2>Escolha um portfólio</h2>
+      <p>Selecione um profissional para ver suas competências, histórico e projetos associados.</p>
+    </div>
+    <div class="grid" id="portfolio-team"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>00Brother</strong>
+        <div class="small">Ideias que ganham forma na web.</div>
+      </div>
+      <div class="small">
+        <a href="mailto:00brotherempresa@gmail.com">00brotherempresa@gmail.com</a>
+        ·
+        <a href="https://wa.me/5543996350864">WhatsApp (43) 99635-0864</a>
+      </div>
+      <div class="small">
+        © 2026 00Brother. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <div class="page-transition" aria-hidden="true"></div>
+  <script src="equipe.js"></script>
+  <script>renderTeam("portfolio-team");</script>
+  <script src="transitions.js"></script>
+</body>
+</html>
